@@ -1,0 +1,14 @@
+<div style="width: 500px;margin: auto;align-items: center;display: flex;flex-direction: row;justify-content:space-between">
+    <div style="padding: 10px 50px;">
+        <strong><%= menu_item.name %></strong>
+    </div>
+    <div style="padding: 10px 50px;">
+        <strong>Price: <%= menu_item.price %></strong>
+    </div>
+</div>
+<div style="width:400px;margin: auto;text-align:right;font-size:14px;">
+    <%= link_to "Delete", [menu_item.menu, menu_item], data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+            } %>
+</div>

@@ -1,0 +1,16 @@
+  <div>
+    <h2>Add a menu item:</h2>
+    <%= form_with model: [ @menu, @menu.menu_items.build ] do |form| %>
+    <p>
+      <%= form.label :name %><br>
+        <%= form.text_field :name %>
+      </p>
+    <p>
+      <%= form.label :price %><br>
+        <%= form.text_area :price %>
+      </p>
+    <p>
+      <%= form.submit %>
+    </p>
+    <% end %>
+  </div>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  root "menus#index"
 
-  resources :articles do
-	resources :comments
+  resources :menus do
+	resources :menu_items
   end
 end
