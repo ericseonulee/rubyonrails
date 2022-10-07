@@ -1,0 +1,17 @@
+<div style="text-align:center;">
+  <h1>Restaurants</h1>
+  </br>
+  </br>
+  <ui>
+    <% @restaurants.each do |restaurant| %>
+    <li>
+      <%= link_to restaurant.name, restaurant %>
+    </li>
+    <% end %>
+  </ui>
+  </br>
+  </br>
+  <hr style="border-top: 3px solid #bbb;">
+  </br>
+  <%= link_to "New Restaurant", new_restaurant_path %>
+</div>

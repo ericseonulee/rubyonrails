@@ -1,0 +1,19 @@
+<div style="text-align:center;">
+  <h1>
+    <%= @restaurant.name%>
+  </h1>
+  </br>
+  </br>
+  <p>
+    <%= link_to "Edit", edit_restaurant_path(@restaurant) %>
+  </p>
+  <p>
+    <%= link_to "Delete", restaurant_path(@restaurant), data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+    } %>
+  </p>
+  <hr style="border-top: 3px solid #bbb;">
+  </br>
+  <%= link_to "Back to Home", root_path %>
+</div>
